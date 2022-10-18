@@ -3,7 +3,7 @@ import ddddocr
 import requests
 
 app = FastAPI()
-ocr = ddddocr.DdddOcr()
+ocr = ddddocr.DdddOcr(show_ad=False)
 
 
 @app.post("/identify/url")
